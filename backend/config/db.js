@@ -13,7 +13,7 @@ const connectDB = async () => {
   } catch (err) {
     if (stopped) return;
     console.error(`Erro ao conectar ao MongoDB: ${err.message}`);
-    console.error(`O servidor HTTP continua no ar; tentando reconectar em ${RETRY_DELAY_MS / 1000}s...`);
+    console.error(`Servidor tentando reconectar em ${RETRY_DELAY_MS / 1000}s...`);
     console.error('Dica: confira se o seu IP atual está liberado em Network Access no MongoDB Atlas.');
     retryTimer = setTimeout(connectDB, RETRY_DELAY_MS);
   }

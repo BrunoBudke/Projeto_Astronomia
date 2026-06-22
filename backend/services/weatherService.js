@@ -2,7 +2,7 @@ const WEATHER_URL = 'https://api.open-meteo.com/v1/forecast';
 const TIMEOUT_MS = 10000;
 
 const WEATHER_CODE_LABELS = {
-  0: 'Céu limpo',
+  0: 'Ceu limpo',
   1: 'Predomínio de céu limpo',
   2: 'Parcialmente nublado',
   3: 'Nublado',
